@@ -12,5 +12,5 @@ mkdir -p /usr/local/bin/
 install minikube /usr/local/bin/
 
 
-minikube start --vm-driver=none
+minikube start --vm-driver=none  --extra-config=kubeadm.ignore-preflight-errors=NumCPU --force --cpus 1
 
